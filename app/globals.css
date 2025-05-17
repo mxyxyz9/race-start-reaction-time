@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 224 71% 4%;
+  --foreground: 213 31% 91%;
+
+  --primary: 0 94% 44%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 222 47% 11%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 223 47% 11%;
+  --muted-foreground: 215 20.2% 65.1%;
+
+  --accent: 216 34% 17%;
+  --accent-foreground: 210 40% 98%;
+
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 240 4.9% 83.9%;
+
+  --radius: 0.5rem;
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom animation for race track */
+.transition-all.duration-2000 {
+  transition-duration: 2000ms;
+}
+
+/* Tabs styling */
+.tabs-list {
+  background-color: hsl(var(--muted));
+  border-radius: var(--radius);
+  padding: 2px;
+}
+
+.tab {
+  border-radius: calc(var(--radius) - 2px);
+  font-weight: 500;
+}
+
+.tab[data-state="active"] {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
