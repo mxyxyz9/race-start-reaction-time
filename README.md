@@ -53,4 +53,4 @@ Wanna play around with it or flex your code skills?
 ```bash
 git clone https://github.com/mxyxyz9/race-start-reaction-time.git
 cd race-start-reaction-time
-open index.html (or serve with any local server)
+open index.html 
